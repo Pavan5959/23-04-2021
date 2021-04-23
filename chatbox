@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbox</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        body
+        {
+        
+            font-family: arial,sans-serif;
+            margin: 0;
+            background-color: #598286;
+        }
+       #header
+       {
+           width: 100%;
+           height: 60px;
+           background-color: #333;
+           box-shadow: 0px 4px 2px #333;
+       }
+       #header>h1
+       {
+           padding: 12px;
+           text-align: center;
+           width:1024px;
+           margin:0px auto;
+           color: #fff;
+       }
+       #container
+       {
+           width:1024px;
+           min-height: 500px;
+           margin:0px auto;
+           margin-top: 10px;
+           background-color: gray;
+           border:1px solid #333;
+       }
+       #controls
+       {
+           width: 1024px;
+           
+           margin:0px auto;
+           text-decoration: orangered;
+       }
+       textarea{
+           width:1018.5px;
+           font-style: italic;
+           color: darkslategray;
+           background-color: lightgreen;
+           resize: none;
+       }
+       #send
+       {    background-color: rgb(255, 174, 0);
+            color:rgb(3, 61, 248);
+           font-size: 24px;
+       }
+    </style>
+</head>
+<body>
+    <div id="header">
+          <h1>JQuery </h1>
+    </div>
+    <div id="container">
+
+    </div>
+    <div id="controls">
+   <textarea id="textbox" placeholder ="Enter Your Message Here..."> </textarea>
+  <button id="send">send</button>
+    </div>
+</body>
+</html>
