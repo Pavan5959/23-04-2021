@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textboxes</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <style type="text/css">
+      body
+      {
+        
+        margin-left: 45%;
+       
+      }
+        #display
+        {   
+            width: 500px;
+            height: 500px;
+            border: 1px dashed dodgerblue;
+        }
+        div
+        {
+        font-size: 15px;
+        color: indigo;
+        background-color: aqua;
+        }
+        #textbox
+        {
+            margin-left: 15%;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+      $(function()
+      {
+       $('#submit').click(function()
+       {
+        var txt = $('#textbox').val(); //value of textbox is stored in txt
+        $('#display').html(txt);  //txt is assigns the value to display
+        $('#textbox').val("");  //("") is referd to as to be empty
+       });  
+      });
+    </script>
+    <input id="textbox" type="text">
+      <button id="submit">submit</button>
+      <div id="display"></div>
+</body>
+</html> 
