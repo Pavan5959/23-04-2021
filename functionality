@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functionality</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+      button
+      {
+          font-size: 15px;
+          margin-top: 50px;
+          margin-left: 50%;
+      }
+    </style>
+    </head>
+    <body>
+        <!--If we write script tag above the body tag it will not read the entire
+            code. Beacuse it gets readed and then goes for other code-->
+        <script> 
+            $('.btn2').hide();
+      </script>
+      <!--If code gets to be ready from any where in the same page we use
+          Function then it reads the script tag in any form of order-->
+         
+         <script>
+             //after loading the whole document the gets executed
+         $(function()
+         {
+            $('.btn4').hide();
+            $('.btn2').css('font-size','25px');
+            $('.btn2').css('color','violet');
+            $('.btn6').css('color','blue');
+         }) ;
+           
+      </script>
+
+        <button id="special" class="btn1" >Button 1</button>
+        <button class="btn2">Button 2</button>
+        <button class="btn3" >Button 3</button>
+        <button class="btn4" >Button 4</button>
+        <button class="btn5" >Button 5</button>
+        <button class="btn6" >Button 6</button>
+
+     <!--If the code of JavaScript writes at the end of body tag it will all the 
+         program and gets output in the script-->
+      <script> 
+            $('#special').hide();
+      </script>
+    </body>
+   
+    </html>
